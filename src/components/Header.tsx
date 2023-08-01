@@ -17,10 +17,10 @@ const Header = () => {
     }
   ];
   return (
-    <header className="flex flex-row items-center w-full border-b-2 border-gray-400 border-dashed">
-      <div className="text-3xl mx-10 text-gray-800">🄷🄰🅂🄷<span className="text-blue-800">🄱🄾🅇</span></div>
+    <header className="flex flex-col md:flex-row lg:flex-row  lg:w-full items-center border-b-2 border-gray-400 border-dashed">
+      <div className="text-3xl mx-10 text-gray-800 lg:text-md">🄷🄰🅂🄷<span className="text-blue-800">🄱🄾🅇</span></div>
       <div>
-        <ul className="flex flex-row text-gray-800">
+        <ul className="flex flex-row text-gray-800 text-sm lg:text-md">
           {links.map((el, key) => (
             <li className="m-5">
               <Link href={el.link}>{el.title}</Link>
