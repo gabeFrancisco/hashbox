@@ -17,12 +17,12 @@ const Header = () => {
     }
   ];
   return (
-    <header className="flex flex-col md:flex-row lg:flex-row  lg:w-full items-center border-b-2 border-gray-400 border-dashed">
+    <header className="top-1 sticky shadow-lg bg-white flex flex-col md:flex-row lg:flex-row  lg:w-full items-center border-b-2  ">
       <div className="text-3xl mx-10 text-gray-800 lg:text-md">🄷🄰🅂🄷<span className="text-blue-800">🄱🄾🅇</span></div>
       <div>
         <ul className="flex flex-row text-gray-800 text-sm lg:text-md">
           {links.map((el, key) => (
-            <li className="m-5">
+            <li className="m-5 hover:text-blue-800">
               <Link href={el.link}>{el.title}</Link>
             </li>
           ))}
