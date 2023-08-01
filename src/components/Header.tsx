@@ -17,7 +17,7 @@ const Header = () => {
     }
   ];
   return (
-    <header className="flex flex-row items-center w-full border-b-2 border-gray-300 border-dashed">
+    <header className="flex flex-row items-center w-full border-b-2 border-gray-400 border-dashed">
       <div className="text-3xl mx-10 text-gray-800">🄷🄰🅂🄷<span className="text-blue-800">🄱🄾🅇</span></div>
       <div>
         <ul className="flex flex-row text-gray-800">
