@@ -8,12 +8,25 @@ const HashForm = () => {
   const [output, setOutput] = useState("");
   const formik = useFormik({
     initialValues: {
-      type: "",
+      type: "sha256",
       input: "",
     },
     enableReinitialize: true,
     onSubmit: async (values) => {
-      await sha512(values.input).then((result) => setOutput(result));
+      switch(values.type){
+        case 'sha1':
+          await sha1(values.input).then((result) => setOutput(result));
+          break;
+        case 'sha256':
+          await sha256(values.input).then((result) => setOutput(result));
+          break;
+        case 'sha384':
+          await sha384(values.input).then((result) => setOutput(result));
+          break;
+        case 'sha512':
+          await sha512(values.input).then((result) => setOutput(result));
+          break;
+      }
     },
   });
   return (
@@ -28,6 +41,53 @@ const HashForm = () => {
               onChange={formik.handleChange}
               value={formik.values.input}
             ></textarea>
+          </div>
+          <div className="flex flex-col">
+            <label htmlFor="type">Hash Type:</label>
+            <fieldset>
+              <div className="flex flex-row my-3">
+                <div className="mr-3">
+                  <input
+                    type="radio"
+                    className="mx-1"
+                    name="type"
+                    value="sha1"
+                    onChange={formik.handleChange}
+                  />
+                  <label htmlFor="">SHA-1</label>
+                </div>
+                <div className="mr-3">
+                  <input
+                    type="radio"
+                    className="mx-1"
+                    name="type"
+                    value="sha256"
+                    onChange={formik.handleChange}
+                  />
+                  <label htmlFor="">SHA-256</label>
+                </div>
+                <div className="mr-3">
+                  <input
+                    type="radio"
+                    className="mx-1"
+                    name="type"
+                    value="sha384"
+                    onChange={formik.handleChange}
+                  />
+                  <label htmlFor="">SHA-384</label>
+                </div>
+                <div className="mr-3">
+                  <input
+                    type="radio"
+                    className="mx-1"
+                    name="type"
+                    value="sha512"
+                    onChange={formik.handleChange}
+                  />
+                  <label htmlFor="">SHA-512</label>
+                </div>
+              </div>
+            </fieldset>
           </div>
           <div>
             <button
