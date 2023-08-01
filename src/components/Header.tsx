@@ -5,12 +5,16 @@ const Header = () => {
   const links = [
     {
       title: "Hashes",
-      link: "/hashes",
+      link: "/",
     },
     {
       title: "GUIDs",
       link: "/guids",
     },
+    {
+      title: "Colors",
+      link: 'colors'
+    }
   ];
   return (
     <header className="flex flex-row items-center w-full border-b-2 border-gray-300 border-dashed">

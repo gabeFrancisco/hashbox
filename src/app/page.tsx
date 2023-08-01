@@ -1,10 +1,11 @@
-import Header from '@/components/Header'
-import Image from 'next/image'
+import SectionTitle from "@/components/SectionTitle";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <div>
-      <Header/>
+      <SectionTitle title="Hashes" subtitle="Generate hashes here!"/>
+
     </div>
-  )
+  );
 }
