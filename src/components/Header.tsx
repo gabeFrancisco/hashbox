@@ -12,11 +12,15 @@ const Header = () => {
     },
     {
       title: "GUIDs",
-      link: "/guids",
+      link: "guids",
     },
     {
       title: "Base64",
       link: 'base64'
+    },
+    {
+      title: "BCrypt",
+      link: "bcrypt"
     }
   ];
   return (

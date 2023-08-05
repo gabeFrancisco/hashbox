@@ -105,6 +105,7 @@ const HashForm = () => {
               name="input"
               value={output}
               rows={10}
+              readOnly
             ></textarea>
           </div>
         </div>
