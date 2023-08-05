@@ -15,8 +15,8 @@ const Header = () => {
       link: "/guids",
     },
     {
-      title: "Colors",
-      link: 'colors'
+      title: "Base64",
+      link: 'base64'
     }
   ];
   return (

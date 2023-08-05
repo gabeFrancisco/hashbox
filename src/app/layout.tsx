@@ -35,7 +35,7 @@ export default function RootLayout({
         <Header />
         <div className="flex flex-row w-full">
           <div className="flex flex-col items-start lg:w-40"></div>
-          <div className="flex flex-col w-full mx-5 lg:px-16 text-gray-700">
+          <div className="flex flex-col w-full mx-5 py-10 lg:px-16 text-gray-700">
             {children}
           </div>
           <div className="flex flex-col items-end lg:w-40"></div>
