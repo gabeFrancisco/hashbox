@@ -3,8 +3,10 @@
 import { useFormik } from "formik";
 import React, { useState } from "react";
 import { sha1, sha256, sha384, sha512 } from "crypto-hash";
+import { useRouter } from "next/navigation";
 
 const HashForm = () => {
+  const navigate = useRouter()
   const [output, setOutput] = useState("");
   const formik = useFormik({
     initialValues: {
@@ -13,20 +15,21 @@ const HashForm = () => {
     },
     enableReinitialize: true,
     onSubmit: async (values) => {
-      switch(values.type){
-        case 'sha1':
+      switch (values.type) {
+        case "sha1":
           await sha1(values.input).then((result) => setOutput(result));
           break;
-        case 'sha256':
+        case "sha256":
           await sha256(values.input).then((result) => setOutput(result));
           break;
-        case 'sha384':
+        case "sha384":
           await sha384(values.input).then((result) => setOutput(result));
           break;
-        case 'sha512':
+        case "sha512":
           await sha512(values.input).then((result) => setOutput(result));
           break;
       }
+      navigate.replace("#result")
     },
   });
   return (
@@ -101,10 +104,11 @@ const HashForm = () => {
           <div className="flex flex-col">
             <label>Output:</label>
             <textarea
+              id="result"
               className="p-1 border-2 my-3 border-dashed border-gray-400 rounded-lg w-full"
               name="input"
               value={output}
-              rows={10}
+              rows={7}
               readOnly
             ></textarea>
           </div>
