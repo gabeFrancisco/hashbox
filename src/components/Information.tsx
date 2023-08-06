@@ -14,18 +14,18 @@ const Information = (props: InformationProps) => {
     console.log(toggleView);
   };
   return (
-    <div className="my-5 py-2 px-3 border border-gray-200 rounded-lg">
-      <div className="py-1 border-b border-gray-200 flex flex-row justify-between">
+    <div className="my-5 pt-1 px-3 border border-gray-200 rounded-lg hover:bg-gray-100">
+      <div onClick={handleView} className="py-1 flex flex-row justify-between cursor-pointer">
         <h3 className="text-xl">{props.title}</h3>
         <button
           onClick={handleView}
-          className="border rounded-lg px-3 py-1 bg-blue-800 hover:bg-blue-900 text-white"
+          className="border-b text-gray-500 rounded px-2 py-1"
         >
           {toggleView ? "↑" : "↓"}
         </button>
       </div>
       {toggleView ? (
-        <div className="py-3">
+        <div className="py-3 mt-1 border-t border-gray-200">
           <p>{props.text}</p>
         </div>
       ) : (
