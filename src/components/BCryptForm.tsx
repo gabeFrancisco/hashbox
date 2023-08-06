@@ -1,20 +1,18 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import bcrypt from "bcrypt";
-// import generate from "@/app/services/generateBcrypt";
 
 const BCryptForm = () => {
   const [input, setInput] = useState("");
   const [output, setOutput] = useState("");
 
-  const requestOptions = {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ password: "React Hooks POST Request Example" }),
-  };
-
   const handleOutput = () => {
+    const requestOptions = {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ password: input }),
+    };
+
     fetch("/api/bcrypt", requestOptions)
     .then((res) => res.json())
     .then(data => setOutput(data));
@@ -31,6 +29,7 @@ const BCryptForm = () => {
             name="input"
             value={input}
             onChange={(e) => setInput(e.target.value)}
+            required
           />
           <small>
             A good password must have at least more than 8 characters, symbols

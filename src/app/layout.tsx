@@ -19,6 +19,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  
   return (
     <html lang="en">
       <Script
@@ -39,7 +40,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </Head>
-      <body className={inter.className}>
+      <body id="container" className={`${inter.className} dark:bg-gray-900`}>
         <Header />
         <div className="flex flex-row w-full">
           <div className="flex flex-col items-start lg:w-40"></div>

@@ -3,6 +3,7 @@ import bcrypt from 'bcrypt'
 
 export async function POST(req: Request){
   const { password } = await req.json();
+  console.log(`Data: ${password}`)
   const generate = (input: string) => {
     const saltRounds = 10;
     const salt = bcrypt.genSaltSync(saltRounds);
