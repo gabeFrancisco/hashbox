@@ -5,6 +5,8 @@ import React, { useEffect, useState } from "react";
 const BCryptForm = () => {
   const [input, setInput] = useState("");
   const [output, setOutput] = useState("");
+  const [loading, setLoading] = useState(false)
+
 
   const handleOutput = () => {
     const requestOptions = {
@@ -13,6 +15,8 @@ const BCryptForm = () => {
       body: JSON.stringify({ password: input }),
     };
 
+    setOutput("Loading...")
+    
     fetch("/api/bcrypt", requestOptions)
     .then((res) => res.json())
     .then(data => setOutput(data));
