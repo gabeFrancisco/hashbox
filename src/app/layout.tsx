@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Script from "next/script";
 import Head from "next/head";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -44,8 +45,9 @@ export default function RootLayout({
         <Header />
         <div className="flex flex-row w-full">
           <div className="flex flex-col items-start lg:w-40"></div>
-          <div className="flex flex-col w-full mx-5 py-10 lg:px-16 text-gray-700">
+          <div className="flex flex-col w-full py-10 mx-5 text-gray-700 lg:px-16">
             {children}
+            <Analytics/>
           </div>
           <div className="flex flex-col items-end lg:w-40"></div>
         </div>
