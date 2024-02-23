@@ -8,8 +8,8 @@ const page = () => {
   return (
     <div>
       <SectionTitle title='BCrypt' subtitle='Generate BCrypt passwords in this section'/>
-      <Information title={data[3].title} text={data[3].text}/>
       <BCryptForm/>
+      <Information title={data[3].title} text={data[3].text}/>
     </div>
   )
 }

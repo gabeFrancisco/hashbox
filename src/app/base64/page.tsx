@@ -8,8 +8,8 @@ const page = () => {
   return (
     <div>
       <SectionTitle title='Base64 Converter' subtitle='Here you can convert a string to a Base64 encode!'/> 
-      <Information title={data[2].title} text={data[2].text}/>
       <Base64Form/>
+      <Information title={data[2].title} text={data[2].text}/>
     </div>
   )
 }

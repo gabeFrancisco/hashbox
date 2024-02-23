@@ -7,8 +7,8 @@ export default function Home() {
   return (
     <div>
       <SectionTitle title="Hashes" subtitle="Generate hashes here!" />
-      <Information title={data[0].title} text={data[0].text} />
       <HashForm />
+      <Information title={data[0].title} text={data[0].text} />
     </div>
   );
 }
