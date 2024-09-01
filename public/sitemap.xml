@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+		<!--	created with www.mysitemapgenerator.com	-->
+		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+	<loc>https://hash-box.vercel.app/</loc>
+	<lastmod>2024-09-01T05:16:50+01:00</lastmod>
+	<priority>0.4</priority>
+</url>
+<url>
+	<loc>https://hash-box.vercel.app/guids</loc>
+	<lastmod>2024-09-01T05:16:50+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://hash-box.vercel.app/base64</loc>
+	<lastmod>2024-09-01T05:16:50+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://hash-box.vercel.app/bcrypt</loc>
+	<lastmod>2024-09-01T05:16:50+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+</urlset>
