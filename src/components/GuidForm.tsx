@@ -23,12 +23,12 @@ const GuidForm = () => {
   return (
     <div>
       <form>
-        <div className="grid grid-col gap-5 mr-3">
+        <div className="grid gap-5 mr-3 grid-col">
           <div className="">
             <label>Number of GUIDs(30 max):</label>
             <input
               type="number"
-              className="border-2 border-dashed ml-3 border-gray-400 rounded-lg p-1"
+              className="p-1 ml-3 border border-gray-400 gray-400 -lg"
               min={1}
               max={30}
               value={num}
@@ -38,14 +38,14 @@ const GuidForm = () => {
           <button
             type="button"
             onClick={generateGuid}
-            className="border rounded-lg px-3 py-1 bg-blue-800 hover:bg-blue-900 text-white"
+            className="px-3 py-1 text-white bg-blue-800 border hover:bg-blue-900"
           >
             Generate GUID!
           </button>
           <div className="flex flex-col">
             <label htmlFor="result">Result:</label>
             <textarea
-              className="p-1 border-2 my-3 border-dashed border-gray-400 rounded-lg w-full"
+              className="w-full p-1 my-3 border border-gray-400 gray-400 -lg"
               name="result"
               id=""
               cols={30}

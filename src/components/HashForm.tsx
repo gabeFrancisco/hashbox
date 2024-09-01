@@ -35,11 +35,11 @@ const HashForm = () => {
   return (
     <div>
       <form>
-        <div className="grid grid-col-1 gap-5">
+        <div className="grid gap-5 grid-col-1">
           <div className="flex flex-col">
             <label>Enter input text:</label>
             <textarea
-              className="p-1 border-2 border-dashed my-3 border-gray-400 rounded-lg w-full"
+              className="w-full p-1 my-3 border border-gray-400 gray-400 -lg"
               name="input"
               onChange={formik.handleChange}
               value={formik.values.input}
@@ -96,7 +96,7 @@ const HashForm = () => {
             <button
               type="button"
               onClick={() => formik.handleSubmit()}
-              className="border rounded-lg px-3 py-1 bg-blue-800 hover:bg-blue-900 text-white"
+              className="px-3 py-1 text-white bg-blue-800 hover:bg-blue-900"
             >
               Generate!
             </button>
@@ -105,7 +105,7 @@ const HashForm = () => {
             <label>Output:</label>
             <textarea
               id="result"
-              className="p-1 border-2 my-3 border-dashed border-gray-400 rounded-lg w-full"
+              className="w-full p-1 my-3 border border-gray-400 gray-400 -lg"
               name="input"
               value={output}
               rows={7}

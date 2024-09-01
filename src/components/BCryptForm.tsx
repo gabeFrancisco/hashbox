@@ -24,11 +24,11 @@ const BCryptForm = () => {
 
   return (
     <div>
-      <div className="grid grid-col-1 gap-5">
+      <div className="grid gap-5 grid-col-1">
         <div className="flex flex-col">
           <label>Enter a password:</label>
           <input
-            className="p-1 border-2 border-dashed my-3 border-gray-400 rounded-lg w-full"
+            className="w-full p-1 my-1 border border-gray-400 gray-400 -lg"
             type="text"
             name="input"
             value={input}
@@ -43,14 +43,14 @@ const BCryptForm = () => {
         <div className="flex flex-col">
           <label>Output:</label>
           <textarea
-            className="p-1 border-2 border-dashed my-3 border-gray-400 rounded-lg w-full"
+            className="w-full p-1 my-1 border border-gray-400 gray-400 -lg"
             name="output"
             value={output}
             readOnly
           />
         </div>
         <button
-          className="border rounded-lg px-3 py-1 bg-blue-800 hover:bg-blue-900 text-white"
+          className="px-3 py-1 text-white bg-blue-800 border hover:bg-blue-900"
           type="button"
           onClick={handleOutput}
         >
