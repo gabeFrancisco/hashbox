@@ -39,7 +39,7 @@ const HashForm = () => {
           <div className="flex flex-col">
             <label>Enter input text:</label>
             <textarea
-              className="w-full p-1 my-3 border border-gray-400 gray-400 -lg"
+              className="w-full p-1 my-1 border border-gray-400 gray-400 -lg"
               name="input"
               onChange={formik.handleChange}
               value={formik.values.input}
@@ -48,7 +48,7 @@ const HashForm = () => {
           <div className="flex flex-col">
             <label htmlFor="type">Hash Type:</label>
             <fieldset>
-              <div className="flex flex-row my-3">
+              <div className="flex flex-row my-1">
                 <div className="mr-3">
                   <input
                     type="radio"
@@ -105,7 +105,7 @@ const HashForm = () => {
             <label>Output:</label>
             <textarea
               id="result"
-              className="w-full p-1 my-3 border border-gray-400 gray-400 -lg"
+              className="w-full p-1 my-1 border border-gray-400 gray-400 -lg"
               name="input"
               value={output}
               rows={7}

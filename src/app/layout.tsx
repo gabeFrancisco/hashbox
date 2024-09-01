@@ -9,9 +9,9 @@ import { Analytics } from "@vercel/analytics/react";
 const inter = Nunito({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "HashBox - Hash Generator",
+  title: "HashBox - Hash generator and dev tools!",
   description:
-    "Generate hashes, GUIDs and much more! A complete dev-friendly app!",
+    "Generate hashes, GUIDs, Bcrypt and much more! Fast and simple!",
   icons: ["favicon.ico"],
 };
 
@@ -23,15 +23,6 @@ export default function RootLayout({
   
   return (
     <html lang="en">
-      <Head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
-        
-      </Head>
       <body id="container" className={`${inter.className} dark:bg-gray-900`}>
         <Header />
         <div className="flex flex-row w-full">

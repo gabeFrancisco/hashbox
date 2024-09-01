@@ -9,7 +9,7 @@ interface InformationProps {
 
 const Information = (props: InformationProps) => {
   return (
-    <div className="px-3 pt-1 my-5 border-b border-gray-400 hover:bg-gray-100">
+    <div className="pt-1 my-5 border-b border-gray-400 hover:bg-gray-100">
       <div className="flex flex-row justify-between py-1 cursor-pointer">
         <h2 className="text-xl">{props.title}</h2>
         <button
