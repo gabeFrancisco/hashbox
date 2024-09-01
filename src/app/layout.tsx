@@ -9,9 +9,9 @@ import { Analytics } from "@vercel/analytics/react";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "hashBox - Hash Generator",
+  title: "HashBox - Hash Generator",
   description:
-    "Generate hashes, GUIDs and much more! A complete dev-friend app!",
+    "Generate hashes, GUIDs and much more! A complete dev-friendly app!",
   icons: ["favicon.ico"],
 };
 
