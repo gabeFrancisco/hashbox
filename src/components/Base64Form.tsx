@@ -17,9 +17,9 @@ const Base64Form = () => {
     setDecodeResult(atob(decoder));
   };
 
-  const handleCopytoClipboard = (text: string) => {
-    navigator.clipboard.writeText(text)
-  }
+  const handleCopyToClipboard = (text: string) => {
+    navigator.clipboard.writeText(text);
+  };
 
   return (
     <div>
@@ -29,7 +29,15 @@ const Base64Form = () => {
           <div className="flex flex-col">
             <label>Enter input text:</label>
             <div className="flex flex-row w-full">
-              <button type="button" className="px-3 my-1 text-white bg-blue-800 rounded-tl rounded-bl hover:bg-blue-900">
+              <button
+                onClick={() => {
+                  navigator.clipboard
+                    .readText()
+                    .then((text) => setEncoder(text));
+                }}
+                type="button"
+                className="px-3 my-1 text-white bg-blue-800 rounded-tl rounded-bl hover:bg-blue-900"
+              >
                 Paste
               </button>
               <textarea
@@ -43,7 +51,11 @@ const Base64Form = () => {
           <div className="flex flex-col">
             <label>Encoded result:</label>
             <div className="flex flex-row w-full">
-              <button type="button" className="px-3 my-1 text-white bg-blue-800 rounded-tl rounded-bl hover:bg-blue-900" onClick={() => handleCopytoClipboard(encodeResult)}>
+              <button
+                type="button"
+                className="px-3 my-1 text-white bg-blue-800 rounded-tl rounded-bl hover:bg-blue-900"
+                onClick={() => handleCopyToClipboard(encodeResult)}
+              >
                 Copy
               </button>
               <textarea
@@ -69,7 +81,15 @@ const Base64Form = () => {
           <div className="flex flex-col">
             <label>Enter input text:</label>
             <div className="flex flex-row w-full">
-              <button type="button" className="px-3 my-1 text-white bg-blue-800 rounded-tl rounded-bl hover:bg-blue-900">
+              <button
+                type="button"
+                onClick={() =>
+                  navigator.clipboard
+                    .readText()
+                    .then((text) => setDecoder(text))
+                }
+                className="px-3 my-1 text-white bg-blue-800 rounded-tl rounded-bl hover:bg-blue-900"
+              >
                 Paste
               </button>
               <textarea
@@ -83,7 +103,11 @@ const Base64Form = () => {
           <div className="flex flex-col">
             <label>Decoded result:</label>
             <div className="flex flex-row w-full">
-              <button  type="button" className="px-3 my-1 text-white bg-blue-800 rounded-tl rounded-bl hover:bg-blue-900">
+              <button
+                type="button"
+                onClick={() => handleCopyToClipboard(decodeResult)}
+                className="px-3 my-1 text-white bg-blue-800 rounded-tl rounded-bl hover:bg-blue-900"
+              >
                 Copy
               </button>
               <textarea
