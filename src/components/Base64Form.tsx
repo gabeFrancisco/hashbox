@@ -36,7 +36,7 @@ const Base64Form = () => {
                     .then((text) => setEncoder(text));
                 }}
                 type="button"
-                className="px-3 my-1 text-white bg-blue-800 rounded-tl rounded-bl hover:bg-blue-900"
+                className="rounded-tr-none rounded-br-none btn-primary"
               >
                 Paste
               </button>
@@ -53,7 +53,7 @@ const Base64Form = () => {
             <div className="flex flex-row w-full">
               <button
                 type="button"
-                className="px-3 my-1 text-white bg-blue-800 rounded-tl rounded-bl hover:bg-blue-900"
+                className="rounded-tr-none rounded-br-none btn-primary"
                 onClick={() => handleCopyToClipboard(encodeResult)}
               >
                 Copy
@@ -66,7 +66,7 @@ const Base64Form = () => {
             </div>
           </div>
           <button
-            className="px-3 py-1 text-white bg-blue-800 border hover:bg-blue-900"
+            className="btn-primary"
             type="button"
             onClick={handleEncode}
           >
@@ -88,7 +88,7 @@ const Base64Form = () => {
                     .readText()
                     .then((text) => setDecoder(text))
                 }
-                className="px-3 my-1 text-white bg-blue-800 rounded-tl rounded-bl hover:bg-blue-900"
+                className="rounded-tr-none rounded-br-none btn-primary"
               >
                 Paste
               </button>
@@ -106,7 +106,7 @@ const Base64Form = () => {
               <button
                 type="button"
                 onClick={() => handleCopyToClipboard(decodeResult)}
-                className="px-3 my-1 text-white bg-blue-800 rounded-tl rounded-bl hover:bg-blue-900"
+                className="rounded-br-none prounded-tr-none btn-primary"
               >
                 Copy
               </button>
@@ -118,7 +118,7 @@ const Base64Form = () => {
             </div>
           </div>
           <button
-            className="px-3 py-1 text-white bg-blue-800 border -lg hover:bg-blue-900"
+            className="btn-primary"
             type="button"
             onClick={handleDecode}
           >
