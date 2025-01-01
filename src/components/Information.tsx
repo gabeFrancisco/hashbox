@@ -4,7 +4,7 @@ import React, { useState } from "react";
 
 interface InformationProps {
   title: string;
-  text: string;
+  text: React.ReactNode | string;
 }
 
 const Information = (props: InformationProps) => {
@@ -19,7 +19,7 @@ const Information = (props: InformationProps) => {
       </div>
       
         <div className="py-3 mt-1 mb-2 border-t border-gray-200 ">
-          <p className="text-sm">{props.text}</p>
+          {props.text}
         </div>
       
     </div>

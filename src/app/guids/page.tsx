@@ -2,7 +2,7 @@ import GuidForm from '@/components/GuidForm'
 import Information from '@/components/Information'
 import SectionTitle from '@/components/SectionTitle'
 import React from 'react'
-import data from '../data/data'
+import data from '../../data/data'
 
 const page = () => {
   return (

@@ -1,7 +1,7 @@
 import HashForm from "@/components/HashForm";
 import Information from "@/components/Information";
 import SectionTitle from "@/components/SectionTitle";
-import data from "./data/data";
+import data from "../data/data";
 
 export default function Home() {
   return (
