@@ -96,7 +96,7 @@ const HashForm = () => {
             <button
               type="button"
               onClick={() => formik.handleSubmit()}
-              className="px-3 py-1 text-white bg-blue-800 hover:bg-blue-900"
+              className="btn-primary"
             >
               Generate!
             </button>

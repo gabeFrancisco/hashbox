@@ -22,6 +22,6 @@ body {
 
 @layer components {
   .btn-primary{
-    @apply px-3 py-1 my-1 text-white bg-blue-600 shadow shadow-sky-500 rounded hover:bg-blue-700
+    @apply px-3 py-1 my-1 transition-all text-white bg-blue-600 shadow shadow-sky-500 rounded hover:bg-blue-700
   }
 }

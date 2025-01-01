@@ -50,7 +50,7 @@ const BCryptForm = () => {
           />
         </div>
         <button
-          className="px-3 py-1 text-white bg-blue-800 border hover:bg-blue-900"
+          className="btn-primary"
           type="button"
           onClick={handleOutput}
         >
