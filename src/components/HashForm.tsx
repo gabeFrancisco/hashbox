@@ -45,7 +45,7 @@ const HashForm = () => {
               value={formik.values.input}
             ></textarea>
           </div>
-          <div className="flex flex-col">
+          <div id="result" className="flex flex-col">
             <label htmlFor="type">Hash Type:</label>
             <fieldset>
               <div className="flex flex-row my-1">
@@ -104,7 +104,6 @@ const HashForm = () => {
           <div className="flex flex-col">
             <label>Output:</label>
             <textarea
-              id="result"
               className="w-full p-1 my-1 border border-gray-400 gray-400 -lg"
               name="input"
               value={output}
