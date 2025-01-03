@@ -11,7 +11,7 @@ const Information = (props: InformationProps) => {
   return (
     <div className="p-3 pt-1 my-5 text-gray-700 bg-gray-100 border-gray-100 rounded shadow-lg">
       <div className="flex flex-row justify-between py-1 cursor-pointer">
-        <h2 className="text-2xl">{props.title}</h2>
+        <h1 className="text-2xl">{props.title}</h1>
         {/* <button
           className="px-2 py-1 text-gray-600 "
         >
