@@ -9,10 +9,27 @@ import { Analytics } from "@vercel/analytics/react";
 const inter = Nunito({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "HashBox - Hash generator and dev tools!",
+  title: "HashBox - Generate Hashes, GUIDs, Base64, and Bcrypt!",
   description:
-    "Generate hashes, GUIDs, Bcrypt and much more! Fast and simple!",
+    "HashBox is an online tool for generating hashes, GUIDs, Base64 encodings, and Bcrypt hashes. With a simple and intuitive interface, it streamlines hash creation for security and software development applications.",
+  keywords: [
+    "HashBox",
+    "hash generator",
+    "Bcrypt generator",
+    "GUID generator",
+    "Base64 encoder",
+    "online tool",
+    "hash creation",
+    "security",
+    "software development",
+    "cryptography",
+    "hashes online",
+    "hash tool",
+  ],
   icons: ["favicon.ico"],
+  alternates: {
+    canonical: './',
+}
 };
 
 export default function RootLayout({
@@ -20,7 +37,6 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  
   return (
     <html lang="en">
       <body id="container" className={`${inter.className} dark:bg-gray-900`}>
@@ -29,7 +45,7 @@ export default function RootLayout({
           <div className="flex flex-col items-start lg:w-40"></div>
           <div className="flex flex-col w-full py-10 mx-5 text-gray-700 lg:px-16">
             {children}
-            <Analytics/>
+            <Analytics />
           </div>
           <div className="flex flex-col items-end lg:w-40"></div>
         </div>
