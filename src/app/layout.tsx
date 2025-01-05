@@ -21,8 +21,6 @@ export const metadata: Metadata = {
     "online tool",
     "hash creation",
     "security",
-    "software development",
-    "cryptography",
     "hashes online",
     "hash tool",
   ],
