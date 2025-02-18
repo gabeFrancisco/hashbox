@@ -9,11 +9,11 @@ import { Analytics } from "@vercel/analytics/react";
 const inter = Nunito({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "HashBox - Generate Hashes, GUIDs, Base64, and Bcrypt!",
+  title: "HashLab - Generate Hashes, GUIDs, Base64, and Bcrypt!",
   description:
-    "HashBox is an online tool for generating hashes, GUIDs, Base64 encodings, and Bcrypt hashes. With a simple and intuitive interface, it streamlines hash creation for security and software development applications.",
+    "HashLab is an online tool for generating hashes, GUIDs, Base64 encodings, and Bcrypt hashes. With a simple and intuitive interface, it streamlines hash creation for security and software development applications.",
   keywords: [
-    "HashBox",
+    "HashLab",
     "hash generator",
     "Bcrypt generator",
     "GUID generator",
