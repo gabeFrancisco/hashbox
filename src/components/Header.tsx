@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-import logo from "../../public/logo.webp"
+import logo from "../../public/logo.svg"
 import Image from "next/image";
 
 const Header = () => {
@@ -24,9 +24,9 @@ const Header = () => {
     },
   ];
   return (
-    <header className="sticky top-0 z-30 flex flex-col items-center bg-white shadow-md md:flex-row lg:flex-row lg:w-full">
-      <div className="flex flex-row items-center justify-center mx-10 mt-5 text-gray-800 md:mt-0 lg:text-md w-52">
-        <Image className="text-blue-800" src={logo} alt="Logo" />
+    <header className="sticky top-0 z-30 flex items-center bg-white shadow-md md:flex-row lg:flex-row lg:w-full">
+      <div className="flex flex-row items-center justify-center mx-10 text-gray-800 md:mt-0 lg:text-md w-52">
+        <Image className="text-blue-800" width={120} height={120} src={logo} alt="Logo" />
       </div>
       <div>
         <ul className="flex flex-row text-sm text-gray-800 lg:text-md">
