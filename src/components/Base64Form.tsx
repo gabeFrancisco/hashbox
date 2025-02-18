@@ -106,7 +106,7 @@ const Base64Form = () => {
               <button
                 type="button"
                 onClick={() => handleCopyToClipboard(decodeResult)}
-                className="rounded-br-none prounded-tr-none btn-primary"
+                className="rounded-tr-none rounded-br-none btn-primary"
               >
                 Copy
               </button>
