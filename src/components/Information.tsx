@@ -1,7 +1,3 @@
-"use client";
-
-import React, { useState } from "react";
-
 interface InformationProps {
   title: string;
   text: React.ReactNode | string;
